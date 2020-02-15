@@ -21,13 +21,13 @@ let g:fzf_colors =
 
 
 
-
+execute pathogen#infect()
 syntax on
 syntax enable           "Kolorowanie skladni
 set background=dark
 
 "colorscheme gruvbox    "Sets defaut color scheme
-"colorscheme solarized
+colorscheme solarized
 "colorscheme molokai
 
 
@@ -133,7 +133,7 @@ autocmd InsertEnter * syn clear EOLWS | syn match EOLWS excludenl /\s\+\%#\@!$/
 autocmd InsertLeave * syn clear EOLWS | syn match EOLWS excludenl /\s\+$/
 highlight EOLWS ctermbg=red guibg=red
 set colorcolumn=120
-highlight ColorColumn ctermbg=lightred ctermfg=lightred
+"highlight ColorColumn ctermbg=lightred ctermfg=lightred
 
 " automatyczne rozpoznawanie typu pliku, ladowanie specyficznego, dla danego typu, pluginu (ftplugin.vim, indent.vim):
 "filetype plugin indent on
@@ -148,10 +148,10 @@ set hidden                " This allows buffers to be hidden if you've modified 
 "set errorbells
 "set visualbell
 
-set autoindent
-set cindent
+"set autoindent
+"set cindent
 
-set smarttab
+"set smarttab
 
 set undolevels=1000
 set confirm
@@ -161,8 +161,8 @@ set confirm
 
 set backspace=indent,eol,start
 
-set textwidth=120
-set t_Co=256
+"set textwidth=120
+"set t_Co=256
 
 
 "call plug#begin()
