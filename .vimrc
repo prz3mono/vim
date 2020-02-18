@@ -24,11 +24,11 @@ let g:fzf_colors =
 execute pathogen#infect()
 syntax on
 syntax enable           "Kolorowanie skladni
-set background=dark
 
 "colorscheme gruvbox    "Sets defaut color scheme
-colorscheme solarized
-"colorscheme molokai
+"colorscheme solarized
+"set background=dark
+colorscheme molokai
 
 
 "set number relativenumber      " Set HYBRID numbers
