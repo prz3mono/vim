@@ -1,0 +1,28 @@
+1. sudo apt-get install fzf
+2. Dodać w .bashrc ". /usr/share/doc/fzf/examples/key-bindings.bash"
+3. nie wiem czy potrzebne: "curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim"
+  (https://github.com/junegunn/vim-plug)
+4. Dodać w .vimrc:
+    call plug#begin('~/.vim/plugged')
+    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+    Plug 'junegunn/fzf.vim'
+    call plug#end()
+5. W vimie (przeładować .vimrc :so %) :PlugInstall
+6. .vimrc
+
+#Bindowanie FZF do ctrl+p
+nnoremp <c-p> :Files<Cr>
+#FZF na dole
+let g:fzf_layout = { 'down': '40%' }
+
+
+
+
+
+
+
+Sciąga:
+ctrl + t = otworz w nowym oknie (przelacznie gt, gT)
+ctrl + v = otworz vertical
+ctrl + x = otworz horyzontal
+
