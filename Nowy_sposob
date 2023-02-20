@@ -11,7 +11,7 @@
 6. .vimrc
 
 #Bindowanie FZF do ctrl+p
-nnoremp <c-p> :Files<Cr>
+nnoremap <c-p> :Files<Cr>
 #FZF na dole
 let g:fzf_layout = { 'down': '40%' }
 
